@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertisseur de température</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="conteneur">
+        <h1>Convertisseur de température</h1>
+
+        <!-- Champ pour entrer la température -->
+        <input type="number" id="temperature" placeholder="Entrez une température" value="25">
+        
+        <!-- Boutons pour choisir l'unité à entrer -->
+         <div class="boutons">
+            <button id="btncelsius" class="active">Celsius (°C)</button>
+            <button id="btnfahrenheit">Fahrenheit (°F)</button>
+            <button id="btnkelvin">Kelvin (°K)</button>
+         </div>
+
+         <!-- Les résultats -->
+          <div class="resultats">
+            <div>Celsius : <span id="resultatcelsius">--</span> °C</div>
+            <div>Fahrenheit : <span id="resultatfahrenheit">--</span> °F</div>
+            <div>Kelvin : <span id="resultatkelvin">--</span> °K</div>
+          </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
